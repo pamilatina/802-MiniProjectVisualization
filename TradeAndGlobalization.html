@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Trade & Globalization</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script src="TradeScripts.js"></script>
+    </head>
+    <body>
+            <div class="header" id="myHeader"><h1>Trade and Globalization</h1></div>
+            <div> <button class="button button2"><span><a href="#part1">Global Exports</a></span></button></div></br></br></br></br>
+            <div> <button class="button button2"><span><a href="#section2">Shares</a></span></button></div></br></br></br></br>
+            <div> <button class="button button2"><span><a href="#section3">Trends</a></span></button></div></br></br></br></br>
+            </br></br>
+                </br></br>
+                <section id="section1">
+            <div>
+                <div class="intro" id="part1">
+                    <p>
+                        Trade is a basic economic concept involving the buying and selling of goods and services, with compensation paid by a buyer to a seller, or the exchange of goods or services between parties. Trade can take place within an economy between producers and consumers.
+                    </p>
+                </div>
+            <h2>Trade has grown remarkably over the last century</h2>
+            <nav> 
+            <p class = "about">
+            The integration of national economies into a global economic system has been one of the most important developments of the last century. This process of integration, often called Globalization, has materialized in a remarkable growth in trade between countries.
+
+            The chart here shows the value of world exports over the period 1800-2014. These estimates are in constant prices (i.e. have been adjusted to account for inflation) and are in dexed at 1913 values.<br/><!-- comment -->
+            </br>
+
+            This chart shows an extraordinary growth in international trade over the last couple of centuries: Exports today are more than 40 times larger than in 1913.
+            </p>
+            </nav>
+        </div>
+        <article class="graph">
+             <canvas id ="myChart" width="400" height="250"> </canvas>
+        </article>
+         </section>
+         <section>
+                 </br></br>
+                </br></br>
+                <div>
+                <section id="section2">
+            <h2>Trade has grown more than proportionately with GDP</h2>
+            <nav> 
+            <p class = "about">
+            The chart shows how much more trade we have today relative to a century ago.
+            </br>
+
+            Over the last couple of centuries the world economy has experienced sustained positive economic growth, so looking at changes in trade relative to GDP offers another interesting perspective.
+            </p>
+            </nav>
+        </div>
+        <article class="graph">
+            <canvas id ="myChart2" width="400" height="250"> </canvas>
+        </article>
+         </section>
+                    </br></br>
+                </br></br>
+                <h2>Trade Trends</h2>
+                </br>
+        <div class="container" id="section3">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <video  controls>
+        <source src="Images/International Trade Explained.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="Images/img2.svg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="Images/Controls.png" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="Images/Forex.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="Images/capitalmarket.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="Images/Futures.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/What.jfif" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/img2.svg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Controls.png" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Forex.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div><!-- comment -->
+    <div class="column">
+      <img class="demo cursor" src="Images/capitalmarket.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div><!-- comment -->
+    <div class="column">
+      <img class="demo cursor" src="Images/Futures.png" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+  </div>
+</div>   
+                <script>
+                    
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+                </script>
+    </body>
+</html>

@@ -1,0 +1,257 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 Apr, 2021, 10:23:49 AM
+    Author     : pamil
+*/
+
+
+body {
+  background-image: url('Images/economic.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding: 0;
+  margin:0; 
+}
+
+
+p
+{
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+    padding: 0;
+    background-color: black;
+    opacity: 0.6;
+}
+
+video{
+    
+}
+
+h2
+{
+    opacity: 0.6;
+    padding:20px;
+    color: white;
+    background-color: black;
+}
+
+
+h1{
+    font-size: 5em;
+    color: #87CEFA;
+    margin:0;
+    padding:0;
+    text-align: center;
+    position: fixed;
+}
+
+.intro{
+    padding-top: 200px;
+    height: 500px;
+    text-align: center;
+    top: 5%;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;  
+  position: fixed;
+  background: transparent;
+  right: 10px;  
+  overflow-x: hidden;
+  z-index: 1;
+}
+.button2 {
+        background-color: transparent;;
+          float: right;
+          font-size: 24px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.about {
+  background-color: black;
+  width: 300px;
+  border: 15px #1d3d63;
+  padding: 0px;
+  margin: 0px;
+}
+
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  background-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  float: right;
+  width: 40%;
+  background: transparent;
+  padding: 30px;
+}
+
+article {
+  float: left;
+  padding-right: 20px;
+  width: 60%;
+  background-color: transparent;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#color:hover
+{
+        background:#53a7ea;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+  height:600px;
+  width:1200px;
+  padding-left: 50px;    
+}
+.mySlides img{height: 600px;
+width:1200px;
+padding-left: 50px;}
+
+.mySlides video{height: 600px;
+width:1200px;
+padding-left: 50px;}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+.box {
+        width: 15%;
+        height: 100px;
+        border: 5px dashed #f7a239;
+}
+img {
+        width: 30%;
+        height: 30%;
+}
+
+.graph
+{
+    background-color: white;
+}
+
